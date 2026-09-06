@@ -1,11 +1,11 @@
 const express = require("express");
-const userRouter = require("./routes/user.routes");
+const userRouter = require("./Routes/user.routes");
 const dotenv = require("dotenv");
 dotenv.config();
 const connectToDB = require("./config/db");
 connectToDB();
 const cookieParser = require("cookie-parser");
-const indexRouter = require("./routes/index.routes");
+const indexRouter = require("./Routes/index.routes");
 
 const app = express();
 app.get("/test", (req, res) => {
