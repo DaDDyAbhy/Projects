@@ -54,13 +54,10 @@ connectToDB();
 
 const app = express();
 
-// View engine
 app.set("view engine", "ejs");
 
-// Static files
 app.use(express.static("public"));
 
-// Middlewares
 app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -72,6 +69,7 @@ app.get("/", (req, res) => {
 
 // User routes
 app.use("/", userRouter);
+app.use("/user", userRouter);
 
 // Main application routes
 app.use("/", indexRouter);
