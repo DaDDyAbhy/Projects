@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css"
+        rel="stylesheet"
+    />
+</head>
+
+<body class="h-screen w-screen flex items-center justify-center">
+    
+<form action="/user/login" method="post" class="w-96">
+        <div>
+            <label
+                for="username"
+                class="block mb-2.5 text-sm font-medium text-heading">
+                Username
+            </label>
+
+            <input
+                type="text"
+                id="username"
+                class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-xl focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body mb-6 focus:border-green-400"
+                name="username"
+                placeholder="John"
+                required
+            />
+        </div>
+
+    <div class="mb-6">
+        <label
+            for="password"
+            class="block mb-2.5 text-sm font-medium text-heading">
+            Password
+        </label>
+
+        <input
+            type="password"
+            id="password"
+            class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-xl focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body focus:border-green-400"
+            placeholder="•••••••••"
+            name="password"
+            required
+        />
+    </div>
+
+    <button
+        type="submit"
+        class="text-white bg-blue-600 bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-xl text-sm px-4 py-2.5 focus:outline-none rounded-xl px-5">
+        Submit
+    </button>
+</form>
+
+<script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+
+</body>
+</html>
