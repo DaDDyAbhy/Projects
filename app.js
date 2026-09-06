@@ -62,7 +62,7 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Root → Login
+// Root route → Login page
 app.get("/", (req, res) => {
     res.redirect("/login");
 });
